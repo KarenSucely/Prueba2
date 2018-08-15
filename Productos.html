@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <link rel="stylesheet"  href="Estilos.css">
+   <link rel="stylesheet"  href="Fonts.css">
+   <link rel="stylesheet"  href="EstiloP.css">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <title>PRODUCTOS</title>
+<script type="text/javascript" src="Productos.js">
+</script>
+   
+
+</head>
+<body id="wrapper">
+   <header>
+      <div class="Menu_bar">
+         <a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
+      </div>
+      <nav>
+         <ul>
+            <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+            <li><a class="active" href="Productos.html"><span class="icon-price-tags"></span>Productos</a></li>
+            <li><a href="Compra.html"><span class="icon-cart"></span>Compra</a></li>
+            <li><a href="#"><span class="icon-users"></span>Contactos</a></li>
+            <li><a href="#"><span class="icon-location2"></span>Inicio2</a></li>
+            
+         </ul>
+      </nav>
+   </header>
+   <article style="padding-bottom:2000px"> 
+
+         <section id="icono1">
+            <img src="Producto/icono1.jpg" id="icono1">  
+         </section>
+         <!--para hacer que un elemento sea arrastrable draggable="true" -->
+
+         <figure class="responsive">
+            <img name="100" id ="1" class="juegos" src="Producto/descarga.jpg" alt="Splatoon 2" draggable="true" 
+            ondragstart="drag(event)">
+            <figcaption>Nintendo Switch Splatoon 2</figcaption>
+            <figcaption>Q.699.00</figcaption>
+         </figure>
+   
+         <figure class="responsive">
+          <img  name="2" class="juegos" id ="2" src="Producto/descarga1.jpg" alt="Super Mario Odyssey" draggable="true"     ondragstart="drag(event)" >
+            <figcaption>Nintendo Switch Super Mario Odyssey</figcaption>
+            <figcaption>Q.699.00</figcaption>
+         </figure>
+
+         <figure class="responsive">
+               <img  name="3" class="juegos" id ="3" src="Producto/descarga2.jpg" alt="Zelda Breath of Wild" draggable="true"    ondragstart="drag(event)">
+                  <figcaption>Nintendo Switch Zelda Breath of Wild</figcaption>
+                  <figcaption>Q.699.00</figcaption>
+         </figure>
+
+         <figure class="responsive">
+               <img  id ="4" src="Producto/descarga3.jpg" alt="Super Smash Bros Ultimate" >
+                <figcaption>Nintendo Switch Super Smash Bros Ultimate</figcaption>
+                <figcaption>Q.699.00</figcaption>
+             </figure>
+
+         <figure class="responsive">
+               <img id ="5" src="Producto/descarga4.jpg" alt="Dragon Ball 2 Xenoverse" >
+                <figcaption>Nintendo Switch Dragon Ball 2 Xenoverse</figcaption>
+                <figcaption>Q.699.00</figcaption>
+             </figure>
+
+             <figure class="responsive">
+               <img id ="6" src="Producto/descarga5.jpg" alt="Pokemon Let's Go Pikachu" >
+                <figcaption>Nintendo Switch Pokemon Let's Go Pikachu</figcaption>
+                <figcaption>Q.629.00</figcaption>
+             </figure>
+
+
+
+             <section id="icono1">
+            <img src="Producto/icono2.png" id="icono1">  
+         </section>
+
+         <figure class="responsive">
+               <img id ="7" src="Producto/ps1.jpg" alt="Batman Arkham" >
+                <figcaption>PS3 Batman Arkham City</figcaption>
+                <figcaption>Q.199.00</figcaption>
+             </figure>
+   
+         <figure class="responsive">
+               <img id ="8" src="Producto/ps2.jpg" alt="Crysis 2" >
+                <figcaption>PS3 Crysis 2</figcaption>
+                <figcaption>Q.150.00</figcaption>
+             </figure>
+
+         <figure class="responsive">
+               <img id ="9" src="Producto/ps3.jpg" alt="Tomb Raider" >
+                <figcaption>PS3 Tomb Raider</figcaption>
+                <figcaption>Q.250.00</figcaption>
+             </figure>
+
+         <figure class="responsive">
+               <img id ="10" src="Producto/ps4.jpg" alt="Uncharted 3" >
+                <figcaption>PS3 Uncharted 3</figcaption>
+                <figcaption>Q.200.00</figcaption>
+             </figure>
+
+         <figure class="responsive">
+               <img id ="11" src="Producto/ps5.jpg" alt="The Last Of Us" >
+                <figcaption>PS3 The Last Of Us</figcaption>
+                <figcaption>Q.400.00</figcaption>
+             </figure>
+
+             <figure class="responsive">
+               <img id ="12" src="Producto/ps6.jpg" alt="Mortal Kombat X" >
+                <figcaption>PS3 Mortal Kombat X</figcaption>
+                <figcaption>Q.275.00</figcaption>
+             </figure> 
+      
+   </article>
+   <nav id="carrito" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <figure>
+      <img src="compra.png"  id="compra">
+      </figure>
+   </nav>
+        <footer id="resultado"></footer> 
+   <script src="http://code.jquery.com/jquery-latest.js"></script>
+   <script src="Menu.js"></script>
+</body>
+</html>

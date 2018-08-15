@@ -1,0 +1,160 @@
+#wrapper{
+	width: 1350px;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+*{
+	margin: 0;
+	padding:0;
+}
+
+
+header{
+	width: 100%; /*Toma toda la pantalla ancho*/
+	background:#CCCCCC;
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;
+
+}
+header nav{
+	width: 100%;
+	margin: 0px auto; /*Margen 1.Arriba-abajo y 2. Lados*/
+	background:#024959; 
+	
+}
+.Menu_bar{ 
+	display: none; /*Esconder button*/
+
+}
+
+header nav ul{
+	overflow: hidden;
+	list-style-type: none; /*Elimina las viñetas*/
+
+}
+
+header nav ul li{
+	float: left; /*Coloca en horizontal los iconos*/
+
+}
+
+header nav ul li a{
+	color: white; /*Color de letra*/
+    padding: 20px;
+    display: block;
+    text-decoration:none; /*Eliminar subrayado*/  
+    border-radius: 10px;  /*Borde redondo */
+
+
+}
+header nav ul li span{
+	margin-right: 10px; /*Espacio entre icono y texto*/
+}
+
+header nav ul li a:hover { /*Cambiar el color y letra cuando se mueve el mouse sobre ellos*/
+    background-color: #2E86C1; 
+    color: white; /*Color de letra*/
+}
+.active { 
+    color: black; /*Color de letra*/
+    background-color: #2E86C1; /*Color de fondo*/
+}
+
+a:hover:not(.active) {
+    color: white; /*Color de letra*/
+}
+
+#compra{
+	width: 60px;
+	height: 60px;
+  	position: fixed;
+  	bottom: 0;
+  	right: 0;
+}
+
+
+footer nav img{
+	width: 10px;
+}
+
+@media screen and (max-width: 700px) {
+	#wrapper{
+		width: 100%;
+	}
+
+	header nav {
+		width: 60%;	
+		height: 100%;
+		left:-100%;
+		margin: 0;
+		position: fixed;
+	}
+	header nav ul li{
+		display:block; /*Toma todo el ancho*/
+		float:none;  /*No coloca en horizontal los iconos*/
+		border-bottom:1px solid rgba(255,255,255, .3); /*Lineas de borde entre iconos*/
+	}
+	.Menu_bar{
+		display:block;
+		width: 100%;
+		background: #024959;
+		
+	}
+	.Menu_bar .bt-menu{
+		display: block;
+		padding: 20px;
+		background: #024959;
+		color: white; /*Color de letra*/
+		text-decoration:none;
+		font-weight: bold;	
+
+	}
+	.Menu_bar span {
+		float: right;
+
+	}
+	
+}
+
+
+@media screen and (max-width: 480px) {
+	#wrapper{
+		width: 100%;
+	}
+
+	header nav {
+		width: 60%;	
+		height: 100%;
+		left:-100%;
+		margin: 0;
+		position: fixed;
+	}
+	header nav ul li{
+		display:block; /*Toma todo el ancho*/
+		float:none;  /*No coloca en horizontal los iconos*/
+		border-bottom:1px solid rgba(255,255,255, .3); /*Lineas de borde entre iconos*/
+	}
+	.Menu_bar{
+		display:block;
+		width: 100%;
+		background: #024959;
+		
+	}
+	.Menu_bar .bt-menu{
+		display: block;
+		padding: 20px;
+		background: #024959;
+		color: white; /*Color de letra*/
+		text-decoration:none;
+		font-weight: bold;	
+
+	}
+	.Menu_bar span {
+		float: right;
+
+	}
+}

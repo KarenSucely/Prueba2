@@ -1,0 +1,63 @@
+#wrapper{
+	width: 1350px;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+body{
+	background: #CCCCCC;
+
+}
+
+#icono1 img{
+	width: 100%;
+	height: 100px;
+	background: #024959; /*Color de borde */
+	border-radius: 20px;
+}
+
+
+.responsive{
+	float: left; /*Las img esten horizontal*/
+	margin: 15px auto; 
+	margin-right: 0px; /*Espacio entre figure*/
+	margin-left: 20px; /*Espacio entre figure*/
+	background:#CCCCCC; /*Color de borde */
+	width: 200px; /*ancho de figure en píxeles.*/
+	height: 330px; /*alto de figure en píxeles.*/
+	background-color: #2E86C1; /*Color de fondo*/
+
+}
+
+figure img{
+	display: block;
+    margin: 15px auto; 
+	padding: 4px;  /*Ancho de de borde*/
+	background:#024959; /*Color de borde */
+	border-radius: 20px;	/*borde redondeado*/
+	box-shadow: #999 2px 2px 10px; /*Color de borde redondeado*/
+	width: 100px;	/*ancho de la imagen en píxeles.*/
+	height: 200px;  /*alto de la imagen en píxeles.*/
+}
+
+figure img:hover{
+	-webkit-transform:scale(1.2); /*Efecto de imagen al pasar el mouse */
+}
+
+figcaption{
+	text-align: center;
+	color: white;
+}
+@media screen and (max-width: 700px) {
+	#wrapper{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#wrapper{
+		width: 100%;
+	}
+}
